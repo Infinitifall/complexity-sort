@@ -8,7 +8,7 @@ def complexity_sort(sentences_array):
     # and sentences_words with words from each sentence
     for sentence in sentences_array:
         words = list()
-        temp_words = re.findall(r'[a-zA-Z]+',sentence)
+        temp_words = re.findall(r'(\w[\w\']+\w|\w+)',sentence)
         for word in temp_words:
             words.append(word.lower())
         
